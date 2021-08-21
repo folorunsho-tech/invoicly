@@ -1,0 +1,121 @@
+.icon {
+  font-size: 1.6rem;
+  background-color: white;
+  padding: 0.2rem;
+  border-radius: 100%;
+  color: #7c5dfa;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.new, .mark {
+  padding: 0.5rem 1rem;
+  border: none;
+  color: white;
+  border-radius: 2rem;
+  font-size: 14px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  background-color: #7c5dfa;
+}
+
+.new:hover, .mark:hover {
+  cursor: pointer;
+  background-color: #9277ff;
+}
+
+.edit, .save {
+  padding: 0.5rem 1rem;
+  border: none;
+  color: white;
+  border-radius: 2rem;
+  font-size: 14px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  background-color: #252945;
+}
+
+.edit:hover, .save:hover {
+  cursor: pointer;
+  background-color: #dfe3fa;
+  color: #252945;
+}
+
+.delete {
+  padding: 0.5rem 1rem;
+  border: none;
+  color: white;
+  border-radius: 2rem;
+  font-size: 14px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  background-color: #ec5757;
+}
+
+.delete:hover {
+  cursor: pointer;
+  background-color: #ff9797;
+}
+
+.add {
+  padding: 0.5rem 1rem;
+  border: none;
+  color: white;
+  border-radius: 2rem;
+  font-size: 14px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  background-color: #252945;
+  color: #ffff;
+}
+
+.add:hover {
+  cursor: pointer;
+  color: #252945;
+  background-color: #dfe3fa;
+}
+/*# sourceMappingURL=button.module.css.map */

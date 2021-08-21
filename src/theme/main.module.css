@@ -1,0 +1,79 @@
+.main {
+  cursor: pointer;
+  max-width: 700px;
+  padding: 2rem;
+  width: 60rem;
+  margin: 0 auto;
+  color: white;
+  height: 100vh !important;
+  position: relative;
+}
+
+.main .empty {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 70vh;
+  gap: 2rem;
+}
+
+.main .empty .emptyText {
+  max-width: 30ch;
+}
+
+.main .empty .emptyText h2 {
+  font-size: x-large;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+.main p {
+  color: #dfe3fa;
+}
+
+.main .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 50rem;
+  margin: 0 auto;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.main .top h2 {
+  font-weight: bold;
+}
+
+.main .top p {
+  font-size: small;
+  font-weight: 600;
+}
+
+.main .top .topCTA {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main .mainSection {
+  padding: 1rem 0;
+}
+/*# sourceMappingURL=main.module.css.map */

@@ -1,0 +1,74 @@
+.main {
+  margin-top: 2rem;
+  color: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #1e2139;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.main .client {
+  font-size: 13px;
+}
+
+.main h2,
+.main h3 {
+  font-weight: bold;
+}
+
+.main .top,
+.main .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.main .bottom {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.main .bottom .paid,
+.main .bottom .pending {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding: 0.3rem 0.8rem;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.main .bottom .paid img,
+.main .bottom .pending img {
+  margin-top: 0.15rem;
+}
+
+.main .bottom .paid {
+  background-color: #33d6a023;
+  color: #33d69f;
+}
+
+.main .bottom .pending {
+  background-color: #ff8fa023;
+  color: #ff8f00;
+}
+/*# sourceMappingURL=invoicedisplay.module.css.map */

@@ -1,0 +1,209 @@
+.main {
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 60rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main .meta {
+  border-radius: 0.5rem;
+  background-color: #1e2139;
+  font-size: 14px;
+  padding: 1.5rem;
+  margin: 1rem;
+}
+
+.main p {
+  color: #dfe3fa;
+}
+
+.main .cta,
+.main .mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background-color: #1e2139;
+  width: 100%;
+}
+
+.main .back,
+.main .status,
+.main .clientName {
+  padding: 2rem 1rem;
+}
+
+.main .back {
+  padding: 2rem 1rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 700;
+}
+
+.main .back img {
+  margin-top: 0.3rem;
+}
+
+.main .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.main .summary {
+  background-color: #252945;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  color: white;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main .summary p {
+  color: #888eb0;
+}
+
+.main .summary .summCont {
+  padding: 1rem;
+}
+
+.main .summary .summCont .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.main .summary .summCont .item h2,
+.main .summary .summCont .item p {
+  font-weight: 700;
+}
+
+.main .summary .summCont .item .itemmeta p {
+  margin-top: 0.3rem;
+}
+
+.main .summary button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0c0e16;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+}
+
+.main .summary button p {
+  color: white;
+}
+
+.main .summary button h2 {
+  font-size: 1.2rem;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  font-weight: bold;
+}
+
+.main .status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: #1e2139;
+  margin: 1rem;
+}
+
+.main .status .paid,
+.main .status .pending {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding: 0.3rem 0.8rem;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.main .status .paid img,
+.main .status .pending img {
+  margin-top: 0.15rem;
+}
+
+.main .status .paid {
+  background-color: #33d6a023;
+  color: #33d69f;
+}
+
+.main .status .pending {
+  background-color: #ff8fa023;
+  color: #ff8f00;
+}
+
+@media screen and (min-width: 768px) {
+  .status {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .status .paid,
+  .status .pending {
+    margin: auto 0;
+    margin-left: -10rem;
+  }
+  .status .ctaCont {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .status .paid,
+  .status .pending {
+    margin: auto 0;
+    margin-left: 8rem;
+  }
+}
+/*# sourceMappingURL=invoiceview.module.css.map */
