@@ -10,6 +10,9 @@ function AddItemContextProvider(props) {
       case "DELETE_ITEM":
         itemList = itemList.filter((item) => item.id !== action.payload);
         return itemList;
+      case "SET_DEFAULT":
+        itemList = [];
+        return itemList;
       default:
         return state;
     }

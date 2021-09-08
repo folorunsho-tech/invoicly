@@ -23,10 +23,28 @@ import ItemLists from "./ItemLists";
 import { AddItemcontext } from "../Contexts/AddItemcontext";
 function InvoiceCreate({ isOpen, onClose }) {
   const { dispatch } = useContext(InvoiceContext);
+  // const { dispatch: itemDispatch } = useContext(AddItemcontext);
   const { Items } = useContext(AddItemcontext);
 
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
 
+  // {
+  //   clientName,
+  //     clientAddress,
+  //     clientCity,
+  //     clientCountry,
+  //     clientEmail,
+  //     clientStreetAddress,
+  //     clientPostalCode,
+  //     senderAddress,
+  //     senderCity,
+  //     senderCountry,
+  //     senderPostalCode,
+  //     senderStreetAddress,
+  //     senderCity,
+  //     invoiceDate;
+  //   projectDescription
+  // }
   const Billto = () => {
     return (
       <div className={styles.form}>
@@ -129,7 +147,7 @@ function InvoiceCreate({ isOpen, onClose }) {
               <Input
                 type="text"
                 name="city"
-                {...register("city")}
+                {...register("senderCity")}
                 required
                 _hover={{ border: "1px solid #252945" }}
               />
@@ -299,6 +317,32 @@ function InvoiceCreate({ isOpen, onClose }) {
             }}
             onSubmit={() => {
               onClose();
+              reset(
+                {
+                  clientName: "",
+                  clientAddress: "",
+                  clientCity: "",
+                  clientCountry: "",
+                  clientEmail: "",
+                  clientStreetAddress: "",
+                  clientPostalCode: "",
+                  senderAddress: "",
+                  senderCity: "",
+                  senderCountry: "",
+                  senderPostalCode: "",
+                  senderStreetAddress: "",
+                  invoiceDate: "",
+                  projectDescription: "",
+                },
+                {
+                  keepErrors: true,
+                  keepDirty: true,
+                  keepIsSubmitted: false,
+                  keepTouched: false,
+                  keepIsValid: false,
+                  keepSubmitCount: false,
+                }
+              );
             }}
           >
             Save Changes
